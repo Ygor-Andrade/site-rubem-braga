@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -20,67 +20,127 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-body{
+body {
 	font-family: 'Gideon Roman', cursive;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Bungee', cursive;
 
 }
 
 
-img{
-	width: 100%	;
+img {
+	width: 100%;
 	/* display: none; */
+
 }
- 
-header{	
+
+header {
 	display: flex;
 	justify-content: space-between;
-	background-color:#ff9900;
+	background-color: #ff9900;
 	padding: 10px;
 
 }
 
-header h1{
-width: 25%;
+header h1 {
+	width: 25%;
 }
 
-header nav{
-width: 70%;
+header nav {
+	width: 70%;
 }
 
-        nav ul{
-			padding: 0;
-			list-style-type: none;
-			text-align: right;
-		 }
-		
-		 nav ul li, nav ul li a{
-			 display: inline-block;
-			 width: fit-content;
-			 height: 30px;
-			 margin-bottom: 4px;
-			 padding: 8px;
-		 }
-		 
-		 nav ul li a{
-			 text-decoration: none;
-			 background-color: rgb(29, 122, 0);
-			 color: rgb(0, 0, 0);
-			 
-			 line-height: 30px;
-		 }
-		 nav ul li a:hover{
-			 background-color: rgb(255, 255, 255);
-			 color: #000;
-		 }
+nav ul {
+	padding: 0;
+	list-style-type: none;
+	text-align: right;
+}
 
-.ico-logo{
-	width:40px;
+nav ul li, nav ul li a {
+	display: inline-block;
+	width: fit-content;
+	height: 30px;
+	margin-bottom: 4px;
+	padding: 8px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	background-color: #fc7a00;
+	color: rgb(0, 0, 0);
+
+	line-height: 30px;
+}
+
+nav ul li a:hover {
+	background-color: rgb(255, 255, 255);
+	color: #000;
+}
+
+aside {
+	width: 25%;
+	background-color: #e27c07;
+	padding: 12px;
+
+}
+
+main {
+	display: flex;
+	/* vh corresponde a % da tela do dispositivo 90vh= 90% da altura da tela  */
+	min-height: 90vh;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+body{
+	background-color: #000;
+}
+
+p{
+	margin: 10px;
+}
+
+li,p,h1,h2,h3,h4 {
+	font-size: 1.2em;
+}
+
+h2, h3, h4{
+	margin: 7px;
+}
+
+li{
+	margin: 10px;
+	margin-left: 20px;
+	list-style-type: none;
+}
+
+main a{
+	text-decoration: none;
+	color: rgb(91, 8, 129);
+}
+
+main a:hover {
+	color: #fc7a00;
+	background-color: rgb(0, 0, 0);
+}
+
+.conteudo {
+	width: 70%;
+	background-color: #fc7a00;
+	 padding: 10px; 
+}
+
+
+
+.ico-logo {
+	width: 40px;
 	margin: 0 10px 0 0;
 }
 
- 
- 
+footer p{
+	text-align: center;
+}
