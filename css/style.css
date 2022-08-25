@@ -22,6 +22,7 @@ time, mark, audio, video {
 
 body {
 	font-family: 'Gideon Roman', cursive;
+	padding-top: 100px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,10 +38,17 @@ img {
 }
 
 header {
+	position: fixed;
+	top: 0;
+
 	display: flex;
+	width: 100%;
+	padding: 10px 0 10px 0;
 	justify-content: space-between;
 	background-color: #ff9900;
-	padding: 10px;
+	border: #fc7a00 5px solid;
+	box-shadow: #fc7a00cc 0 4px 4px;
+	
 
 }
 
@@ -75,8 +83,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	background-color: rgb(255, 255, 255);
-	color: #000;
+	background-color: rgb(0, 0, 0);
+	color: #fc7a00;
 }
 
 aside {
@@ -96,29 +104,29 @@ main {
 	margin-top: 20px;
 }
 
-body{
+body {
 	background-color: #000;
 }
 
-p{
+p {
 	margin: 10px;
 }
 
-li,p,h1,h2,h3,h4 {
+li, p, h1, h2, h3, h4 {
 	font-size: 1.2em;
 }
 
-h2, h3, h4{
+h2, h3, h4 {
 	margin: 7px;
 }
 
-li{
+li {
 	margin: 10px;
 	margin-left: 20px;
 	list-style-type: none;
 }
 
-main a{
+main a {
 	text-decoration: none;
 	color: rgb(91, 8, 129);
 }
@@ -128,12 +136,33 @@ main a:hover {
 	background-color: rgb(0, 0, 0);
 }
 
-.conteudo {
-	width: 70%;
-	background-color: #fc7a00;
-	 padding: 10px; 
+.box figure {
+	height: 220px;
+	overflow: hidden;
+	border: black solid 1px;
 }
 
+.box {
+	width: 45%;
+	padding: 10px;
+	margin-bottom: 12px;
+	background-color: aliceblue;
+
+}
+
+
+.fotos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.fotos, .conteudo {
+	width: 70%;
+	padding: 10px;
+	background-color: #fc7a00;
+}
 
 
 .ico-logo {
@@ -141,6 +170,31 @@ main a:hover {
 	margin: 0 10px 0 0;
 }
 
-footer p{
+.modal{
+	position: fixed;
+	top: 20%;
+	right: 0%;
+	width: 200px;
+	padding: 10px;
+	background-color: yellow;
+	border: #e27c07;
+}
+
+.modal .fechar{
+	position: absolute;
+	right: 10px;
+	top: 4px;
+	width: 20px;
+	padding: 2px;
+	background-color: red;
+	color: white;
 	text-align: center;
+}
+
+footer p {
+	text-align: center;
+}
+
+#img-escrever {
+	margin-top: -80px;
 }
