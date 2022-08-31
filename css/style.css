@@ -93,8 +93,8 @@ nav ul li a:hover {
 
 aside {
 	width: 25%;
-	background-color: #e27c07;
-	padding: 12px;
+	background-color: #fc7a00;
+	padding: 10px;
 
 }
 
@@ -214,7 +214,7 @@ footer p {
 	margin-top: -80px;
 }
 
-.fechar{
+.fechar {
 	cursor: pointer;
 }
 
@@ -243,10 +243,10 @@ footer p {
 		cursor: pointer;
 	}
 
-	
+
 
 	.menu-phone {
-		
+
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -271,15 +271,24 @@ footer p {
 		text-indent: 10px;
 	}
 
-.fechar{
-	color: #fc7a00;
-}
+	.fechar {
+		color: #fc7a00;
+	}
 
+	.box {
+		width: 100%;
 
+	}
 
-
-
-
+	@media only screen and (min-device-width: 700px) and (max-device-width: 992px) {	
+		.box figure{
+			height: 300px;
+		}
+	}
+	
+	
+	
+	
 
 
 
